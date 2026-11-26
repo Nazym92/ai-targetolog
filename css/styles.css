@@ -703,3 +703,4 @@ body.no-scroll { overflow: hidden; }
 /* Жёлтый текст на кнопке «Оплатить спец цену» */
 .btn--stack .btn__main,
 .btn--stack .btn__sub { color: #fde047; opacity: 1; text-shadow: 0 1px 6px rgba(0,0,0,.35); }
+.btn--stack.btn--primary { background: linear-gradient(120deg, #5b21b6 0%, #4338ca 50%, #1e40af 100%); }
