@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
   /* 1) Прямая ссылка (оплата, Telegram-бот, форма и т. п.).
         Если заполнить — кнопки сразу откроют эту ссылку, без формы.
         Пример: "https://t.me/your_bot"                             */
-  enrollLink: "https://wa.me/77764273678?text=" + encodeURIComponent("Здравствуйте! Хочу записаться на курс AI TARGETOLOGIST."),
+  enrollLink: "https://wa.me/77764273678?text=" + encodeURIComponent("Здравствуйте! Хочу записаться на курс «ИИ-таргетолог»."),
 
   /* 2) Номер WhatsApp (только цифры, с кодом страны).
         Если заполнить — после отправки формы откроется WhatsApp
@@ -18,6 +18,6 @@ window.SITE_CONFIG = {
   whatsappNumber: "",
 
   /* Название курса и цена — подставляются в сообщение WhatsApp */
-  courseName: "AI TARGETOLOGIST",
+  courseName: "«ИИ-таргетолог»",
   price: "29 900 тенге"
 };
