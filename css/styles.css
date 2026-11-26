@@ -824,3 +824,21 @@ body.no-scroll { overflow: hidden; }
   .pricing .seats-stamp { top: -44px; right: -4px; }
   .pricing .price { margin-top: 18px; }
 }
+
+/* ---------- Агент вместо плюсика в программе: при открытии расправляет руки ---------- */
+.module__toggle--agent { display: grid; place-items: center; background: rgba(217,119,87,.08); border-color: rgba(217,119,87,.35); }
+.module__toggle--agent::before, .module__toggle--agent::after { display: none; }
+.module.is-open .module__toggle--agent { transform: none; background: rgba(217,119,87,.18); border-color: rgba(217,119,87,.6); }
+.agent { width: 30px; height: 30px; overflow: visible; }
+.agent__body, .agent__arm, .agent__leg { fill: #D97757; }
+.agent__eye { fill: #111318; transform-origin: 11px 9px; animation: agentBlink 4s infinite; }
+.agent__arm { transition: transform .5s cubic-bezier(.34,1.56,.64,1); }
+.agent__arm--l { transform-origin: 6px 10px; transform: rotate(-75deg); }   /* руки опущены */
+.agent__arm--r { transform-origin: 16px 10px; transform: rotate(75deg); }
+.module.is-open .agent__arm--l { transform: rotate(30deg); }                /* руки вверх-в стороны */
+.module.is-open .agent__arm--r { transform: rotate(-30deg); }
+.module.is-open .agent { animation: agentHop .5s ease-out; }
+.module__head:hover .agent__arm--r { transform: rotate(-20deg); }          /* машет при наведении */
+.module.is-open .module__head:hover .agent__arm--r { transform: rotate(-45deg); }
+@keyframes agentHop { 0% { transform: translateY(0); } 40% { transform: translateY(-5px); } 100% { transform: translateY(0); } }
+@keyframes agentBlink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
