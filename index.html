@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ============ SEO ============
+       Меняйте title и description под себя.
+       Адрес сайта: https://nazym92.github.io/ai-targetolog/ (поменяйте, если подключите свой домен). -->
+  <title>ИИ-таргетолог — онлайн-курс по нейросетям для таргетологов и маркетологов</title>
+  <meta name="description" content="Практический онлайн-курс «ИИ-таргетолог»: запуск рекламы через Claude, аналитика Google Ads, Meta Ads и TikTok Ads, отчёты, ИИ-креативы, монтаж видео, сайты и автоматизация работы с клиентами.">
+  <meta name="keywords" content="ИИ таргетолог, курс таргетолога, нейросети для маркетолога, Claude для рекламы, ИИ для таргета, курс по нейросетям, таргетированная реклама, Meta Ads, TikTok Ads, Google Ads">
+  <meta name="author" content="Назым Кубенова">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0c10">
+  <link rel="canonical" href="https://nazym92.github.io/ai-targetolog/">
+
+  <!-- Open Graph (превью при отправке ссылки в мессенджерах и соцсетях) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ИИ-таргетолог">
+  <meta property="og:title" content="ИИ-таргетолог — таргетолог нового поколения уже работает с ИИ">
+  <meta property="og:description" content="Освой нейросети для запуска рекламы, аналитики, креативов, монтажа, отчётности и автоматизации работы.">
+  <meta property="og:url" content="https://nazym92.github.io/ai-targetolog/">
+  <meta property="og:image" content="https://nazym92.github.io/ai-targetolog/images/author.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ИИ-таргетолог — онлайн-курс">
+  <meta name="twitter:description" content="Практический курс по использованию ИИ для таргетологов и маркетологов.">
+  <meta name="twitter:image" content="https://nazym92.github.io/ai-targetolog/images/author.jpg">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Структурированные данные для поисковиков (курс). Цену меняйте и здесь. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "ИИ-таргетолог (AI TARGETOLOGIST)",
+    "description": "Практический курс по использованию искусственного интеллекта для таргетологов и маркетологов: запуск рекламы, аналитика, отчёты, креативы, монтаж, сайты и автоматизация.",
+    "inLanguage": "ru",
+    "provider": { "@type": "Person", "name": "Назым Кубенова" },
+    "offers": {
+      "@type": "Offer",
+      "price": "29900",
+      "priceValidUntil": "2026-11-28",
+      "priceCurrency": "KZT",
+      "category": "Paid"
+    },
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "online",
+      "courseWorkload": "P6M"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Фон: светящиеся пятна и сетка -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__orb bg__orb--1"></div>
+    <div class="bg__orb bg__orb--2"></div>
+    <div class="bg__orb bg__orb--3"></div>
+  </div>
+
+  <!-- ================= ШАПКА ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="ИИ-таргетолог — на главную">
+        <span class="logo__mark">AI</span>
+        <span class="logo__text">ИИ-таргетолог</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#audience" class="nav__link">Для кого</a>
+        <a href="#skills" class="nav__link">Чему научишься</a>
+        <a href="#program" class="nav__link">Программа</a>
+        <a href="#author" class="nav__link">Об авторе</a>
+        <a href="#price" class="nav__link">Стоимость</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#price" class="btn btn--primary btn--sm nav__cta">Записаться</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= 1. ПЕРВЫЙ ЭКРАН ================= -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="badge reveal">
+            <span class="badge__dot"></span>
+            Онлайн-курс · ИИ-таргетолог
+          </div>
+
+          <h1 class="hero__title reveal">
+            Таргетолог <span class="gradient-text">нового поколения</span> уже работает с ИИ
+          </h1>
+
+          <p class="hero__subtitle reveal">
+            Освой нейросети для запуска рекламы, аналитики, создания креативов, монтажа, отчётности
+            и автоматизации работы — и делегируй рутину.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#program" class="btn btn--ghost btn--lg">Посмотреть программу</a>
+            <a href="#price" class="btn btn--primary btn--lg" data-enroll>
+              Записаться на курс
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__facts reveal">
+            <li><strong>6</strong> модулей</li>
+            <li><strong>6</strong> месяцев доступа</li>
+            <li><strong>Промпты</strong> и инструкции</li>
+          </ul>
+        </div>
+
+        <!-- Декоративная «панель ИИ» -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="console">
+            <div class="console__bar">
+              <span></span><span></span><span></span>
+              <em>claude · рекламный кабинет</em>
+            </div>
+            <div class="console__body">
+              <div class="msg msg--user">Проанализируй кампании за неделю и найди неэффективные объявления</div>
+              <div class="msg msg--ai">
+                <div class="typing" id="typing"></div>
+              </div>
+              <div class="chart">
+                <span style="--h:42%"></span><span style="--h:64%"></span><span style="--h:38%"></span>
+                <span style="--h:78%"></span><span style="--h:56%"></span><span style="--h:90%"></span>
+                <span style="--h:70%"></span>
+              </div>
+              <div class="tags">
+                <span>Meta Ads</span><span>TikTok Ads</span><span>Google Ads</span>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-card--a">
+            <span class="float-card__icon float-card__icon--claude"><img src="images/claude-logo.svg" alt="" width="18" height="18"></span> Отчёт готов · PDF
+          </div>
+          <div class="float-card float-card--b">
+            <span class="float-card__icon">▶</span> Креатив сгенерирован
+          </div>
+        </div>
+      </div>
+
+      <a href="#audience" class="scroll-hint" aria-label="Листать вниз"><span></span></a>
+    </section>
+
+    <!-- ================= 2. ДЛЯ КОГО КУРС ================= -->
+    <section class="section" id="audience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Для кого</span>
+          <h2 class="section__title">Для кого этот курс</h2>
+        </div>
+
+        <div class="audience">
+          <article class="card audience__card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z M5 10.5V16c0 1.5 3 3 7 3s7-1.5 7-3v-5.5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Начинающие таргетологи</h3>
+            <p>Сразу выстроите работу с ИИ-инструментами и быстрее выйдете на уровень, который ждут клиенты.</p>
+          </article>
+
+          <article class="card audience__card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+            </div>
+            <h3>Действующие таргетологи</h3>
+            <p>Передадите ИИ рутину: запуск, анализ, отчёты — и освободите время на стратегию и новых клиентов.</p>
+          </article>
+
+          <article class="card audience__card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Маркетологи</h3>
+            <p>Научитесь собирать стратегии, коммерческие предложения, презентации и аналитику с помощью нейросетей.</p>
+          </article>
+
+          <article class="card audience__card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Digital-специалисты</h3>
+            <p>Добавите в свой набор навыков ИИ-креативы, монтаж, сайты и автоматизацию работы с клиентами.</p>
+          </article>
+
+          <article class="card audience__card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Предприниматели и владельцы бизнеса</h3>
+            <p>Научитесь запускать и анализировать рекламу с помощью ИИ — для себя или для своей команды маркетинга.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. ЧЕМУ НАУЧИШЬСЯ ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Результат</span>
+          <h2 class="section__title">Чему ты научишься</h2>
+        </div>
+
+        <ul class="skills">
+          <li class="skill reveal"><span class="skill__num">01</span><span class="skill__text">Запускать рекламу через нейросети</span></li>
+          <li class="skill reveal"><span class="skill__num">02</span><span class="skill__text">Анализировать рекламные кампании</span></li>
+          <li class="skill reveal"><span class="skill__num">03</span><span class="skill__text">Создавать отчёты с помощью ИИ</span></li>
+          <li class="skill reveal"><span class="skill__num">04</span><span class="skill__text">Генерировать рекламные фото и видео</span></li>
+          <li class="skill reveal"><span class="skill__num">05</span><span class="skill__text">Монтировать видео через нейросети</span></li>
+          <li class="skill reveal"><span class="skill__num">06</span><span class="skill__text">Создавать сайты и презентации</span></li>
+          <li class="skill skill--wide reveal"><span class="skill__num">07</span><span class="skill__text">Автоматизировать работу с клиентами</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= 4. ПРОГРАММА КУРСА =================
+         Каждый модуль — блок <article class="module">.
+         Чтобы добавить пункт, скопируйте строку <li>...</li>. -->
+    <section class="section" id="program">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Программа</span>
+          <h2 class="section__title">Программа курса</h2>
+          <p class="section__lead">6 модулей — от настройки рабочего пространства до автоматизации работы с клиентами. Нажмите на модуль, чтобы увидеть темы.</p>
+        </div>
+
+        <div class="program">
+
+          <article class="module reveal">
+            <button class="module__head" aria-expanded="false">
+              <span class="module__num">Модуль 1</span>
+              <span class="module__title">Знакомство с нейросетями и их возможностями</span>
+              <span class="module__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="module__body">
+              <ul class="module__list">
+                <li>Настройка рабочего пространства</li>
+                <li>Создание проектов и работа с инструкциями</li>
+                <li>Работа с файлами и документами</li>
+                <li>Постановка задач для ИИ</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="module reveal">
+            <button class="module__head" aria-expanded="false">
+              <span class="module__num">Модуль 2</span>
+              <span class="module__title">Запуск и управление рекламой через нейросети</span>
+              <span class="module__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="module__body">
+              <ul class="module__list">
+                <li>Подключение нейросети к рекламному кабинету</li>
+                <li>Постановка задач для запуска рекламы</li>
+                <li>Создание кампаний и объявлений</li>
+                <li>Анализ рекламных настроек</li>
+                <li>Контроль действий ИИ и проверка ошибок</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="module reveal">
+            <button class="module__head" aria-expanded="false">
+              <span class="module__num">Модуль 3</span>
+              <span class="module__title">ИИ-аналитик и рекламные отчёты</span>
+              <span class="module__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="module__body">
+              <ul class="module__list">
+                <li>Подключение Google Ads, Meta Ads и TikTok Ads</li>
+                <li>Поиск неэффективных объявлений</li>
+                <li>Оптимизация рекламы</li>
+                <li>Автоматическое создание отчётов</li>
+                <li>Ежедневное заполнение отчётов</li>
+                <li>Создание PDF-отчётов</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="module reveal">
+            <button class="module__head" aria-expanded="false">
+              <span class="module__num">Модуль 4</span>
+              <span class="module__title">ИИ для создания рекламных креативов</span>
+              <span class="module__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="module__body">
+              <ul class="module__list">
+                <li>Поиск рекламных идей</li>
+                <li>Генерация изображений через специализированные нейросети</li>
+                <li>Создание рекламных видео</li>
+                <li>Монтаж видео через ИИ</li>
+                <li>Создание статичных креативов</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="module reveal">
+            <button class="module__head" aria-expanded="false">
+              <span class="module__num">Модуль 5</span>
+              <span class="module__title">Автоматизация работы с клиентами</span>
+              <span class="module__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="module__body">
+              <ul class="module__list">
+                <li>Создание маркетинговой стратегии на основе брифов</li>
+                <li>Подготовка коммерческих предложений</li>
+                <li>Создание документов и таблиц</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="module reveal">
+            <button class="module__head" aria-expanded="false">
+              <span class="module__num">Модуль 6</span>
+              <span class="module__title">ИИ-презентации и сайты</span>
+              <span class="module__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="module__body">
+              <ul class="module__list">
+                <li>Создание презентаций через нейросети</li>
+                <li>Презентация рекламной стратегии клиенту</li>
+                <li>Создание сайтов и лендингов через нейросети</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="program__cta reveal">
+          <a href="#price" class="btn btn--primary btn--lg" data-enroll>Записаться на курс</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. ОБ АВТОРЕ =================
+         Фото: замените файл images/author.jpg (вертикальное фото). -->
+    <section class="section" id="author">
+      <div class="container author">
+        <div class="author__photo reveal">
+          <div class="author__frame">
+            <img src="images/author.jpg" alt="Назым Кубенова — автор курса «ИИ-таргетолог»" width="933" height="1400" loading="lazy">
+          </div>
+          <div class="author__glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="author__content">
+          <span class="eyebrow reveal">Автор курса</span>
+          <h2 class="section__title reveal">Назым Кубенова</h2>
+          <p class="author__role reveal">Маркетолог, специалист по таргетированной рекламе</p>
+
+          <ul class="author__facts">
+            <li class="reveal"><strong>6 лет</strong><span>опыта в маркетинге и интернет-рекламе</span></li>
+            <li class="reveal"><strong>2023</strong><span>основала онлайн-школу по таргету</span></li>
+            <li class="reveal"><strong>250+</strong><span>студентов прошли обучение</span></li>
+          </ul>
+
+          <p class="author__text reveal">
+            В курсе собран практический подход к работе с нейросетями в таргете и маркетинге:
+            как использовать ИИ для запуска рекламы, аналитики, креативов, отчётности и работы с клиентами.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. СТОИМОСТЬ =================
+         Цену меняйте здесь (и в блоке JSON-LD в <head>). -->
+    <section class="section" id="price">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Стоимость</span>
+          <h2 class="section__title">Стоимость обучения</h2>
+        </div>
+
+        <div class="price reveal">
+          <div class="price__border" aria-hidden="true"></div>
+          <div class="price__inner">
+            <div class="price__top">
+              <span class="price__name">AI TARGETOLOGIST</span>
+              <span class="price__label">Полный курс</span>
+            </div>
+
+            <div class="price__promo">Специальная цена до 28 ноября</div>
+            <div class="price__value">
+              <span class="price__amount">29 900</span>
+              <span class="price__currency">тенге</span>
+              <s class="price__old">69 000 тенге</s>
+            </div>
+
+            <ul class="price__list">
+              <li>6 модулей</li>
+              <li>Видеоуроки</li>
+              <li>Практические инструкции</li>
+              <li>Промпты</li>
+              <li>Доступ к материалам на 6 месяцев</li>
+            </ul>
+
+            <button type="button" class="btn btn--primary btn--lg btn--block" data-enroll>Записаться на курс</button>
+            <!-- Кнопка оплаты: ссылку меняйте здесь -->
+            <a href="https://pay.kaspi.kz/pay/xpdiifes" target="_blank" rel="noopener" class="btn btn--ghost btn--lg btn--block price__pay">Оплата</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. FAQ =================
+         Чтобы добавить вопрос — скопируйте целиком блок <div class="faq__item">. -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Вопросы</span>
+          <h2 class="section__title">Частые вопросы</h2>
+        </div>
+
+        <div class="faq">
+          <div class="faq__item reveal">
+            <button class="faq__q" aria-expanded="false">В каком формате проходит обучение?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Курс состоит из видеоуроков, практических инструкций и готовых промптов. Проходить материалы можно в удобном темпе, из любой точки мира.</p></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__q" aria-expanded="false">Как долго у меня будет доступ к материалам?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Доступ ко всем материалам курса открывается на 6 месяцев. За это время можно пройти программу и возвращаться к урокам и промптам по мере необходимости.</p></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__q" aria-expanded="false">Какие подписки понадобятся для обучения?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Основной инструмент курса — Claude, для полноценной работы рекомендуется платная подписка. В отдельных уроках используются ChatGPT и специализированные нейросети для генерации изображений и видео — у многих из них есть бесплатные тарифы или пробный период. Подписки оплачиваются отдельно и не входят в стоимость курса.</p></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__q" aria-expanded="false">Подойдёт ли курс, если я только начинаю?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Да. Курс подходит начинающим и действующим таргетологам, маркетологам, digital-специалистам и предпринимателям. Работа с нейросетями разбирается с нуля — с настройки рабочего пространства.</p></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__q" aria-expanded="false">Нужны ли навыки программирования?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Нет. Задачи для ИИ ставятся обычным текстом. Даже создание сайтов через нейросети разбирается по шагам, без необходимости писать код самостоятельно.</p></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__q" aria-expanded="false">С какого устройства можно проходить курс?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Смотреть уроки можно с компьютера, планшета или телефона. Для практических заданий — работы с рекламными кабинетами, отчётами и монтажом — удобнее использовать компьютер.</p></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__q" aria-expanded="false">Как записаться на курс?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Нажмите кнопку «Записаться на курс» — откроется чат в WhatsApp, где можно задать вопросы. Оплатить обучение можно по кнопке «Оплата» в блоке стоимости.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ФИНАЛЬНЫЙ ПРИЗЫВ ================= -->
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 class="cta__title">Делегируй рутину ИИ — <span class="gradient-text">и работай как таргетолог нового поколения</span></h2>
+          <div class="cta__actions">
+            <a href="#program" class="btn btn--ghost btn--lg">Посмотреть программу</a>
+            <button type="button" class="btn btn--primary btn--lg" data-enroll>Записаться на курс</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ПОДВАЛ ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo">
+        <span class="logo__mark">AI</span>
+        <span class="logo__text">ИИ-таргетолог</span>
+      </a>
+      <p class="footer__copy">© <span id="year">2026</span> Назым Кубенова. Онлайн-курс «ИИ-таргетолог».</p>
+    </div>
+  </footer>
+
+  <!-- ================= ОКНО ЗАЯВКИ =================
+       Сейчас это демо-форма: данные никуда не отправляются.
+       Как подключить WhatsApp / Telegram / ссылку на оплату — см. js/config.js и README.md -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Закрыть" data-close>×</button>
+
+      <div class="modal__form-wrap" id="modal-form-wrap">
+        <span class="eyebrow">AI TARGETOLOGIST · 29 900 тенге</span>
+        <h3 class="modal__title" id="modal-title">Записаться на курс</h3>
+        <p class="modal__text">Оставьте контакты — с вами свяжутся и расскажут, как получить доступ.</p>
+
+        <form class="form" id="enroll-form" novalidate>
+          <label class="form__field">
+            <span>Имя</span>
+            <input type="text" name="name" autocomplete="name" required placeholder="Как к вам обращаться">
+          </label>
+          <label class="form__field">
+            <span>Телефон / WhatsApp</span>
+            <input type="tel" name="phone" autocomplete="tel" required placeholder="+7 ___ ___ __ __">
+          </label>
+          <label class="form__field">
+            <span>Telegram или Instagram <em>(необязательно)</em></span>
+            <input type="text" name="social" placeholder="@username">
+          </label>
+          <p class="form__error" id="form-error" role="alert"></p>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Отправить заявку</button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+        </form>
+      </div>
+
+      <div class="modal__success" id="modal-success" hidden>
+        <div class="success-icon">✓</div>
+        <h3 class="modal__title">Заявка принята</h3>
+        <p class="modal__text">Спасибо! С вами свяжутся в ближайшее время.</p>
+        <button type="button" class="btn btn--ghost" data-close>Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

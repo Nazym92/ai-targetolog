@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Адрес сайта на GitHub Pages
+Sitemap: https://nazym92.github.io/ai-targetolog/sitemap.xml
