@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css?v=14">
+  <link rel="stylesheet" href="css/styles.css?v=15">
 
   <!-- Структурированные данные для поисковиков (курс). Цену меняйте и здесь. -->
   <script type="application/ld+json">
@@ -399,33 +399,25 @@
     <!-- ================= РЕЗУЛЬТАТЫ СТУДЕНТОВ =================
          Скриншоты лежат в images/ (личные данные размыты).
          Чтобы добавить ещё один — скопируйте блок <figure class="result">. -->
-    <section class="section" id="results">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="eyebrow">Результаты студентов</span>
-          <h2 class="section__title">Студенты уже применяют эти навыки</h2>
-          <p class="section__lead">Ученики школы уже владеют навыками работы с нейросетями, внедряют их в свои проекты и зарабатывают — в том числе на создании сайтов от 50&nbsp;000 тенге.</p>
+    <section class="section section--results" id="results">
+      <div class="container results-wrap">
+        <div class="results-text">
+          <span class="eyebrow reveal">Результаты студентов</span>
+          <h2 class="section__title reveal">Студенты уже применяют эти навыки</h2>
+          <p class="section__lead reveal">Ученики школы уже владеют навыками работы с нейросетями, внедряют их в свои проекты и зарабатывают — в том числе на создании сайтов от 50&nbsp;000 тенге.</p>
+          <p class="results__note reveal">Скриншоты из чатов со студентами. Личные данные скрыты. Нажмите, чтобы увеличить.</p>
         </div>
 
-        <div class="results">
-          <figure class="result reveal">
-            <div class="result__img"><img src="images/result-ads.jpg" alt="Скриншот из чата: нейросеть перезапустила рекламную кампанию, и она работает лучше" width="1143" height="1005" loading="lazy"></div>
-            <figcaption class="result__cap">
-              <strong>Запуск рекламы через нейросеть</strong>
-              <span>Нейросеть сама перезапустила рекламную кампанию — и новая кампания работает лучше.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="result reveal">
-            <div class="result__img"><img src="images/result-sites.jpg" alt="Скриншот из чата: студентка нашла клиента на Google-рекламу и продала сайт за 50 000 тенге" width="1054" height="787" loading="lazy"></div>
-            <figcaption class="result__cap">
-              <strong>Сайт за 50 000 тенге</strong>
-              <span>Студентка нашла клиента на Google-рекламу за 80 000 тг в месяц и продала ему сайт за 50 000 тг, сделанный с ChatGPT.</span>
-            </figcaption>
-          </figure>
+        <div class="floats reveal" aria-label="Скриншоты результатов студентов">
+          <a class="float-shot float-shot--a" href="images/result-ads.jpg" target="_blank" rel="noopener">
+            <img src="images/result-ads.jpg" alt="Скриншот: нейросеть перезапустила рекламную кампанию, и она работает лучше" width="1143" height="1005" loading="lazy">
+            <span class="float-shot__tag">Реклама через ИИ</span>
+          </a>
+          <a class="float-shot float-shot--b" href="images/result-sites.jpg" target="_blank" rel="noopener">
+            <img src="images/result-sites.jpg" alt="Скриншот: студентка нашла клиента и продала сайт за 50 000 тенге" width="1054" height="787" loading="lazy">
+            <span class="float-shot__tag">Сайт за 50 000 тг</span>
+          </a>
         </div>
-
-        <p class="results__note reveal">Скриншоты из чатов со студентами. Личные данные скрыты.</p>
       </div>
     </section>
 
@@ -619,7 +611,7 @@
     </div>
   </div>
 
-  <script src="js/config.js?v=14"></script>
-  <script src="js/main.js?v=14"></script>
+  <script src="js/config.js?v=15"></script>
+  <script src="js/main.js?v=15"></script>
 </body>
 </html>

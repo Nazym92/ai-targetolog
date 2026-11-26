@@ -732,3 +732,45 @@ body.no-scroll { overflow: hidden; }
 .result__cap span { color: var(--muted); font-size: 15px; }
 .results__note { margin-top: 20px; text-align: center; color: #6b6d7c; font-size: 13px; }
 @media (max-width: 760px) { .results { grid-template-columns: 1fr; } }
+
+/* ---------- Результаты: маленькие «парящие» скриншоты под углом ---------- */
+.section--results { padding: 80px 0; }
+.results-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.results-text .results__note { text-align: left; margin-top: 18px; }
+.floats { position: relative; height: 340px; }
+.float-shot {
+  position: absolute; display: block; width: 250px;
+  border-radius: 16px; overflow: visible;
+  animation: shotFloat 7s ease-in-out infinite;
+  transition: transform .4s var(--ease);
+}
+.float-shot img {
+  width: 100%; height: auto; border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,.7), 0 0 40px -10px rgba(139,92,246,.45);
+}
+.float-shot--a { --r: -7deg; left: 4%; top: 10px; }
+.float-shot--b { --r: 6deg; right: 4%; top: 90px; animation-delay: -3.5s; }
+.float-shot:hover { animation-play-state: paused; transform: rotate(0deg) scale(1.06); z-index: 2; }
+.float-shot__tag {
+  position: absolute; left: 50%; bottom: -14px; transform: translateX(-50%);
+  white-space: nowrap; padding: 6px 12px; border-radius: 999px;
+  font-size: 12px; font-weight: 700; color: #fff;
+  background: var(--grad-btn); box-shadow: 0 8px 20px -8px rgba(124,58,237,.9);
+}
+@keyframes shotFloat {
+  0%, 100% { transform: rotate(var(--r)) translateY(0); }
+  50%      { transform: rotate(var(--r)) translateY(-14px); }
+}
+@media (max-width: 960px) {
+  .results-wrap { grid-template-columns: 1fr; gap: 24px; }
+  .floats { height: 300px; max-width: 520px; width: 100%; margin: 0 auto; }
+}
+@media (max-width: 640px) {
+  .section--results { padding: 64px 0; }
+  .floats { height: 230px; }
+  .float-shot { width: 52%; }
+  .float-shot--a { left: 0; top: 4px; }
+  .float-shot--b { right: 0; top: 60px; }
+  .float-shot__tag { font-size: 10px; padding: 5px 9px; }
+}
