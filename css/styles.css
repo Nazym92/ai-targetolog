@@ -774,3 +774,53 @@ body.no-scroll { overflow: hidden; }
   .float-shot--b { right: 0; top: 60px; }
   .float-shot__tag { font-size: 10px; padding: 5px 9px; }
 }
+
+/* ---------- Марка «Только 10 мест» ---------- */
+.price { position: relative; }
+.seats-stamp {
+  position: absolute; z-index: 5; top: -28px; right: -18px;
+  --r: 10deg;
+  padding: 6px;
+  background: #fde047;
+  /* зубчики только по краям: полукруглые вырезы + сплошная середина */
+  -webkit-mask: radial-gradient(circle 4px at 6px 6px, transparent 96%, #000) -6px -6px / 12px 12px, linear-gradient(#000 0 0) content-box;
+          mask: radial-gradient(circle 4px at 6px 6px, transparent 96%, #000) -6px -6px / 12px 12px, linear-gradient(#000 0 0) content-box;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,.5));
+  animation: stampFloat 5s ease-in-out infinite;
+  pointer-events: none;
+}
+.seats-stamp__in {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  width: 84px; height: 84px;
+  border: 2px dashed rgba(17, 19, 24, .5); border-radius: 3px;
+  color: #111318; text-align: center; line-height: 1;
+}
+.seats-stamp__in small { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.seats-stamp__in b { font-family: var(--font-head); font-size: 32px; font-weight: 800; margin: 3px 0 2px; }
+@keyframes stampFloat {
+  0%, 100% { transform: rotate(var(--r)) translateY(0); }
+  50%      { transform: rotate(calc(var(--r) - 4deg)) translateY(-8px); }
+}
+.price--feedback .seats-stamp { --r: -8deg; }
+
+/* Марка у кнопки «Оплатить спец цену» — поменьше */
+.btn--stack { position: relative; overflow: visible; }
+.seats-stamp--btn { top: -34px; right: -30px; --r: 12deg; }
+.seats-stamp--btn .seats-stamp__in { width: 60px; height: 60px; }
+.seats-stamp--btn .seats-stamp__in small { font-size: 8px; color: #111318; text-shadow: none; }
+.seats-stamp--btn .seats-stamp__in b { font-size: 22px; color: #111318; text-shadow: none; }
+
+@media (max-width: 640px) {
+  .seats-stamp { top: -24px; right: -6px; }
+  .seats-stamp__in { width: 72px; height: 72px; }
+  .seats-stamp__in b { font-size: 26px; }
+  .seats-stamp__in small { font-size: 9px; }
+  .seats-stamp--btn { top: -30px; right: -12px; }
+  .seats-stamp--btn .seats-stamp__in { width: 48px; height: 48px; }
+  .seats-stamp--btn .seats-stamp__in b { font-size: 18px; }
+  .seats-stamp--btn .seats-stamp__in small { font-size: 7px; }
+}
+@media (max-width: 640px) {
+  .pricing .seats-stamp { top: -44px; right: -4px; }
+  .pricing .price { margin-top: 18px; }
+}
