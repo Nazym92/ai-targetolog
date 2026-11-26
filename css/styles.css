@@ -715,3 +715,20 @@ body.no-scroll { overflow: hidden; }
 @media (max-width: 900px) {
   .pricing { grid-template-columns: 1fr; max-width: 560px; }
 }
+
+/* ---------- Результаты студентов ---------- */
+.results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.result {
+  margin: 0; display: flex; flex-direction: column;
+  border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--line); background: rgba(255,255,255,.025);
+  transition: transform .4s var(--ease), border-color .4s;
+}
+.result:hover { transform: translateY(-6px); border-color: rgba(167,139,250,.4); }
+.result__img { background: #f2f2f4; aspect-ratio: 4 / 3.3; display: grid; place-items: center; overflow: hidden; }
+.result__img img { width: 100%; height: 100%; object-fit: contain; }
+.result__cap { padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 8px; }
+.result__cap strong { font-family: var(--font-head); font-size: 18px; font-weight: 600; }
+.result__cap span { color: var(--muted); font-size: 15px; }
+.results__note { margin-top: 20px; text-align: center; color: #6b6d7c; font-size: 13px; }
+@media (max-width: 760px) { .results { grid-template-columns: 1fr; } }
