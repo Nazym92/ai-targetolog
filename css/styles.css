@@ -842,3 +842,6 @@ body.no-scroll { overflow: hidden; }
 .module.is-open .module__head:hover .agent__arm--r { transform: rotate(-45deg); }
 @keyframes agentHop { 0% { transform: translateY(0); } 40% { transform: translateY(-5px); } 100% { transform: translateY(0); } }
 @keyframes agentBlink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+
+/* Дата старта в тарифах */
+.price__start { margin: -12px 0 24px; font-size: 15px; font-weight: 700; color: #c4b5fd; }
