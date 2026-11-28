@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nazym92.github.io/ai-targetolog/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nazym92.github.io/ai-targetolog/oferta.html</loc>
+    <lastmod>2026-11-28</lastmod>
+    <priority>0.3</priority>
   </url>
 </urlset>
